@@ -1,5 +1,7 @@
 FROM ubuntu:22.04
 
+ARG DEBIAN_FRONTEND=noninteractive
+
 RUN apt-get update && apt-get install -y curl wget \
 	python3-pip python3-dev build-essential python3-numpy python3-matplotlib python3-scipy \
 	python3-pandas python3-sklearn python3-mne python3-tqdm python3-joblib python3-pil \
