@@ -11,10 +11,10 @@ RUN apt-get update && apt-get install -y curl wget \
 RUN pip3 install --upgrade pip
 RUN pip3 install tvb_data tvb_library tvb-gdist build twine
 
-RUN curl -LO https://github.com/sylabs/singularity/releases/download/v3.11.1/singularity-ce_3.11.1-jammy_amd64.deb
+RUN curl -sLO https://github.com/sylabs/singularity/releases/download/v3.11.1/singularity-ce_3.11.1-jammy_amd64.deb
 RUN apt install -y ./singularity-ce_3.11.1-jammy_amd64.deb 
 
-RUN wget https://dl.min.io/client/mc/release/linux-amd64/mc && chmod +x mc && mv mc /usr/local/bin/
+RUN curl -sLO https://dl.min.io/client/mc/release/linux-amd64/mc && chmod +x mc && mv mc /usr/local/bin/
 
 # TODO add freesurfer, fsl, mrtrix, ants, dipy, nipype, dcm2niix, ...
 
