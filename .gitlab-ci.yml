@@ -1,0 +1,7 @@
+singularity:
+  tags:
+    - shell-runner
+  script:
+    - cd singularity
+    - docker build -t ins-amu/singularity .
+    - sh test.sh
