@@ -10,6 +10,7 @@ jobs:
         context:
           - singularity 
           - default
+          - git-lfs
 
     runs-on: ubuntu-latest
     steps:
