@@ -16,7 +16,7 @@ RUN apt install -y ./singularity-ce_3.11.1-jammy_amd64.deb
 
 RUN curl -sLO https://dl.min.io/client/mc/release/linux-amd64/mc && chmod +x mc && mv mc /usr/local/bin/
 
-RUN pip3 install dvc
+RUN pip3 install "dvc[all]"
 
 # TODO add freesurfer, fsl, mrtrix, ants, dipy, nipype, dcm2niix, ...
 
