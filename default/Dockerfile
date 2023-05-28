@@ -18,6 +18,6 @@ RUN apt install -y ./singularity-ce_3.11.1-jammy_amd64.deb
 RUN curl -sLO https://dl.min.io/client/mc/release/linux-amd64/mc && chmod +x mc && mv mc /usr/local/bin/
 
 RUN pip3 install "dvc[all]" jupyterlab
-
+RUN echo 'allowed_users = anybody' > /etc/X11/Xwrapper.config
 # TODO add freesurfer, fsl, mrtrix, ants, dipy, nipype, dcm2niix, ...
 
