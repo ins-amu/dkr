@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y curl wget \
 	python3-pandas python3-sklearn python3-mne python3-tqdm python3-joblib python3-pil \
 	python3-pytest python3-pytest-cov python3-pytest-xdist python3-pytest-mock \
 	datalad tigervnc-standalone-viewer xfce4-session xfce4-terminal neovim neovim-qt \
-	python3-neovim xfce4
+	python3-neovim xfce4 xpra
 
 RUN pip3 install --upgrade pip
 RUN pip3 install tvb_data tvb_library tvb-gdist build twine
