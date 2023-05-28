@@ -19,8 +19,5 @@ RUN curl -sLO https://dl.min.io/client/mc/release/linux-amd64/mc && chmod +x mc 
 
 RUN pip3 install "dvc[all]" jupyterlab
 
-RUN curl -LO https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64 \
- && dpkg -i code*.deb
-
 # TODO add freesurfer, fsl, mrtrix, ants, dipy, nipype, dcm2niix, ...
 
