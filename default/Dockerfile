@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y curl wget \
 	python3-pip python3-dev build-essential python3-numpy python3-matplotlib python3-scipy \
 	python3-pandas python3-sklearn python3-mne python3-tqdm python3-joblib python3-pil \
 	python3-pytest python3-pytest-cov python3-pytest-xdist python3-pytest-mock \
-	datalad tigervnc-standalone-viewer xfce4-session xfce4-terminal neovim neovim-qt \
+	datalad tigervnc-standalone-server xfce4-session xfce4-terminal neovim neovim-qt \
 	python3-neovim xfce4 xpra
 
 RUN pip3 install --upgrade pip
