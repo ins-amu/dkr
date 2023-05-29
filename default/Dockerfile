@@ -19,5 +19,7 @@ RUN curl -sLO https://dl.min.io/client/mc/release/linux-amd64/mc && chmod +x mc 
 
 RUN pip3 install "dvc[all]" jupyterlab
 RUN echo 'allowed_users = anybody' > /etc/X11/Xwrapper.config
+
+RUN apt-get install -y chromium-browser
 # TODO add freesurfer, fsl, mrtrix, ants, dipy, nipype, dcm2niix, ...
 
